@@ -7,7 +7,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'name',
         message: 'Your project name',
-        default: 'my-project'
+        default: this.appname
       }
     ]);
   }

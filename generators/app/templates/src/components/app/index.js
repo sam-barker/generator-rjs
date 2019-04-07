@@ -23,3 +23,5 @@ class App extends React.Component {
 App.defaultProps = {};
 
 App.propTypes = {};
+
+export default App;
