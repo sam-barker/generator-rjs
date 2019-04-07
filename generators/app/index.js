@@ -36,11 +36,11 @@ module.exports = class extends Generator {
       this.destinationPath('src/components/app/index.js')
     );
     this.fs.copy(
-      this.templatePath('.babelrc'),
+      this.templatePath('_babelrc'),
       this.destinationPath('.babelrc')
     );
     this.fs.copy(
-      this.templatePath('.gitignore'),
+      this.templatePath('_gitignore'),
       this.destinationPath('.gitignore')
     );
     this.fs.copy(

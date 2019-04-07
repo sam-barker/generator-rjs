@@ -1,6 +1,6 @@
 {
   "name": "generator-rjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yeoman generator for react",
   "scripts": {
     "lint": "semistandard"
@@ -13,7 +13,7 @@
     "yeoman-generator"
   ],
   "files": [
-    "generators"
+    "generators/**/*"
   ],
   "author": "Samuel Barker <spbarker1994@gmail.com>",
   "license": "ISC",
