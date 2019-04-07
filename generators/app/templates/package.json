@@ -1,0 +1,45 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "scripts": {
+    "build:dev": "NODE_ENV=development webpack",
+    "build:prod": "NODE_ENV=production webpack",
+    "start:dev": "NODE_ENV=development webpack-dev-server --hot",
+    "start:prod": "NODE_ENV=production webpack-dev-server --hot",
+    "lint": "semistandard",
+    "test": "jest",
+    "test:coverage": "jest--coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint && npm run test"
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": ["<rootDir>/testSetup.js"],
+    "testRegex": "__tests__/**/.*.spec.js$",
+    "transform": {
+      "\\.js?$": "babel-jest",
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "semistandard": {
+    "ignore": [
+      "**/node_modules/"
+    ],
+    "globals": [ "describe", "it", "expect" ]
+  }
+}
