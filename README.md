@@ -1,4 +1,4 @@
-# generator-rc
+# generator-rjs
 
 A Yeoman generator for boostrapping a React project with the following technologies:
   * Jest as a test framework, with 100% enforced code coverage
@@ -12,9 +12,9 @@ A Yeoman generator for boostrapping a React project with the following technolog
 1. Installing yeoman and the generator:
 ```
 npm install -g yo
-npm install -g generator-rc
+npm install -g generator-rjs
 ```
-2. Create your project directory, and inside it run `yo rc`
+2. Create your project directory, and inside it run `yo rjs`
 3. Enjoy!
 
 ## Scripts
