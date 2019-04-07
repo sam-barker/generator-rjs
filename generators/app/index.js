@@ -6,8 +6,8 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'name',
-        message: 'Your component name (camelCase)',
-        default: 'myComponent'
+        message: 'Your project name',
+        default: 'my-project'
       }
     ]);
   }
@@ -60,6 +60,7 @@ module.exports = class extends Generator {
         '@babel/core',
         '@babel/preset-env',
         '@babel/preset-react',
+        'babel-eslint',
         'babel-loader',
         'enzyme',
         'enzyme-adapter-react-16',

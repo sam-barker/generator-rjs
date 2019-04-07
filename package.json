@@ -35,6 +35,10 @@
     "ignore": [
       "**/node_modules/"
     ],
-    "globals": [ "describe", "it", "expect" ]
+    "globals": [
+      "describe",
+      "it",
+      "expect"
+    ]
   }
 }

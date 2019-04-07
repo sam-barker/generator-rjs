@@ -21,7 +21,7 @@
     "setupFilesAfterEnv": ["<rootDir>/testSetup.js"],
     "testRegex": "__tests__/**/.*.spec.js$",
     "transform": {
-      "\\.js?$": "babel-jest",
+      "\\.js?$": "babel-jest"
     },
     "collectCoverageFrom": [
       "src/**/*.js",
@@ -37,6 +37,7 @@
     }
   },
   "semistandard": {
+    "parser": "babel-eslint",
     "ignore": [
       "**/node_modules/"
     ],
