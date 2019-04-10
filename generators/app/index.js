@@ -62,6 +62,7 @@ module.exports = class extends Generator {
         '@babel/preset-react',
         'babel-eslint',
         'babel-loader',
+        'cross-env',
         'enzyme',
         'enzyme-adapter-react-16',
         'html-webpack-plugin',

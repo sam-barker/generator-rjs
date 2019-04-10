@@ -2,10 +2,10 @@
   "name": "<%= name %>",
   "version": "1.0.0",
   "scripts": {
-    "build:dev": "NODE_ENV=development webpack",
-    "build:prod": "NODE_ENV=production webpack",
-    "start:dev": "NODE_ENV=development webpack-dev-server --hot",
-    "start:prod": "NODE_ENV=production webpack-dev-server --hot",
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "build:prod": "cross-env NODE_ENV=production webpack",
+    "start:dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "start:prod": "cross-env NODE_ENV=production webpack-dev-server --hot",
     "lint": "semistandard",
     "test": "jest",
     "test:coverage": "jest --coverage"
