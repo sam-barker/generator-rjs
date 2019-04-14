@@ -1,5 +1,7 @@
 # generator-rjs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sam-barker/generator-rjs.svg)](https://greenkeeper.io/)
+
 A Yeoman generator for boostrapping a React project with the following technologies:
   * Jest as a test framework, with 100% enforced code coverage
   * Enzyme to test react components
